@@ -45,7 +45,10 @@ const useStyles = createStyles((theme) => ({
     },
   },
 
-  link: {
+  hvr:{
+border:'3px solid black'
+  },
+  link:{
     color: theme.white,
     display: 'block',
     lineHeight: 1,
@@ -53,13 +56,20 @@ const useStyles = createStyles((theme) => ({
     textDecoration: 'none',
     fontSize: theme.fontSizes.lg,
     fontWeight: 300,
+    
+  '&:hover':{
+    border:'2px solid white',
+    borderColor:'transparent',
+    borderBottomColor:'white',
 
     [theme.fn.smallerThan('sm')]: {
       borderRadius: 0,
       padding: theme.spacing.md,
-      color: theme.black,
-    },
+      color: theme.black,  
   },
+  },
+},
+
 }));
 
 export default useStyles;
