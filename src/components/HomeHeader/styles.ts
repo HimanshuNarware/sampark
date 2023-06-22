@@ -53,26 +53,13 @@ const useStyles = createStyles((theme) => ({
     textDecoration: 'none',
     fontSize: theme.fontSizes.lg,
     fontWeight: 300,
-    
-
-// '&::after':{
-
-//   content: '""',
-//   position: 'absolute',
-//   bottom: '0',
-//   height: '3px',
-//   transition: '0.7s',
-//   width: '100%',
-//   left: '0',
-//   transform: 'scaleX(0)',
-//   transformOrigin: 'center',
+    transformOrigin: 'left',
 
   '&:hover':{
 
-borderRadius:'44px',
-    border:'2px solid #3eff71b0',
-    boxShadow:'2px 1px 6px  #1bb31b',
-    fontSize:'20px',
+border:'2px solid white',
+    borderColor:'transparent',
+    borderBottomColor:'white',
   
 
     [theme.fn.smallerThan('sm')]: {
