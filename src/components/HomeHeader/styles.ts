@@ -61,6 +61,14 @@ border:'3px solid black'
     border:'2px solid white',
     borderColor:'transparent',
     borderBottomColor:'white',
+    transformOrigin: 'left',
+
+  '&:hover':{
+
+border:'2px solid white',
+    borderColor:'transparent',
+    borderBottomColor:'white',
+  
 
     [theme.fn.smallerThan('sm')]: {
       borderRadius: 0,
